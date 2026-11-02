@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - TastyGo</title>
+    <title>Dashboard - FoodDash</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
@@ -11,23 +11,128 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">TastyGo</a>
+                <a href="index.html"><h1>FoodDash</h1></a>
             </div>
-            <!-- Rest of the code -->
+            <div class="delivery-preference">
+                <button class="leave-at-door active">Leave at door</button>
+                <button class="hand-off">Hand to me</button>
+            </div>
+            <div class="user-menu">
+                <span class="user-name">User</span>
+                <div class="dropdown-menu">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
         </div>
     </header>
-    
-    <!-- Rest of dashboard code -->
-    
+
+    <main class="dashboard-container">
+        <div class="dashboard-sidebar">
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <span>👤</span>
+                </div>
+                <h2 class="user-name">User Name</h2>
+            </div>
+            <nav class="dashboard-nav">
+                <a href="#wallet" class="active">Wallet</a>
+                <a href="#orders">Orders</a>
+                <a href="#favorites">Favorites</a>
+                <a href="#settings">Settings</a>
+            </nav>
+        </div>
+
+        <div class="dashboard-content">
+            <section id="wallet" class="dashboard-section">
+                <h2>Wallet</h2>
+                <div class="wallet-card">
+                    <div class="wallet-info">
+                        <h3>Current Balance</h3>
+                        <div class="wallet-balance">$0.00</div>
+                    </div>
+                    <button class="add-funds-btn">Add Funds</button>
+                </div>
+                <div class="payment-methods">
+                    <h3>Payment Methods</h3>
+                    <div class="payment-card">
+                        <div class="card-icon">💳</div>
+                        <div class="card-details">
+                            <h4>Visa ending in 1234</h4>
+                            <p>Expires 12/25</p>
+                        </div>
+                        <button class="default-btn">Default</button>
+                    </div>
+                    <button class="add-payment-btn">+ Add Payment Method</button>
+                </div>
+            </section>
+
+            <section id="orders" class="dashboard-section">
+                <h2>Order History</h2>
+                <div class="order-history">
+                    <!-- Order history will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <section id="favorites" class="dashboard-section">
+                <h2>Favorites</h2>
+                <div class="favorites-list">
+                    <!-- Favorites will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <section id="settings" class="dashboard-section">
+                <h2>Account Settings</h2>
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" value="User Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="user@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" value="(123) 456-7890">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Default Address</label>
+                        <textarea id="address">123 Main St, City, State 12345</textarea>
+                    </div>
+                    <button class="save-settings-btn">Save Changes</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                TastyGo
+                <h2>FoodDash</h2>
             </div>
-            <!-- Rest of footer code -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Get to Know Us</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Investors</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Let Us Help You</h3>
+                    <a href="#">Account Details</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Doing Business</h3>
+                    <a href="#">Become a Partner</a>
+                    <a href="#">Advertise</a>
+                </div>
+            </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 TastyGo. All rights reserved.</p>
+            <p>&copy; 2023 FoodDash. All rights reserved.</p>
         </div>
     </footer>
 

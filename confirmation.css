@@ -1,0 +1,149 @@
+/* Order Confirmation Styles */
+
+.confirmation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.confirmation-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 40px;
+}
+
+.confirmation-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 30px;
+}
+
+.confirmation-card h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.confirmation-message {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.order-details, .order-summary {
+    margin-bottom: 40px;
+}
+
+.order-details h2, .order-summary h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.order-info {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-row span:first-child {
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.order-items {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item-name {
+    display: flex;
+    align-items: center;
+}
+
+.order-item-quantity {
+    margin-right: 10px;
+    color: var(--dark-gray);
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 15px;
+    border-top: 1px solid var(--medium-gray);
+}
+
+.confirmation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.view-order-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.home-btn {
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .confirmation-card {
+        padding: 25px;
+    }
+    
+    .info-row {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .info-row span:first-child {
+        margin-bottom: 5px;
+    }
+    
+    .confirmation-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+} 

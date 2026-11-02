@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requirements - TastyGo</title>
+  <link rel="stylesheet" href="css/requirements.css">
+  <style>
+    /* Base styling inspired by the CP317 Food Requirements document */
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2, h3, h4 {
+      color: #000;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    p, ul, ol, table {
+      margin-bottom: 1em;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 2em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #d6d6d6;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TastyGo Requirements Document</h1>
+    <p>This document defines the functional and non-functional requirements for the TastyGo food-ordering platform.</p>
+  </header>
+  
+  <section class="section" id="1-introduction">
+    <h2>1. Introduction</h2>
+    <h3>1.1 Purpose</h3>
+    <p>The purpose of this document is to outline the requirements for the TastyGo application. TastyGo is a web-based food delivery platform that connects customers, restaurant clients, and administrators to enable efficient ordering, menu management, and payment processing.</p>
+    
+    <h3>1.2 Scope</h3>
+    <p>The system will allow:</p>
+    <ul>
+      <li>Customers to register, browse menus, place orders, and make payments.</li>
+      <li>Restaurant clients to manage menus, receive orders, update order statuses, and view sales reports.</li>
+      <li>Administrators to monitor overall system activity, manage user accounts, and handle customer service tasks.</li>
+    </ul>
+    
+    <h3>1.3 Definitions and Acronyms</h3>
+    <ul>
+      <li><strong>Customer:</strong> End-user placing orders.</li>
+      <li><strong>Restaurant Client:</strong> Business user managing menu and orders.</li>
+      <li><strong>Administrator:</strong> User overseeing system operations and quality.</li>
+      <li><strong>Menu:</strong> Digital listing of available food items.</li>
+      <li><strong>Order:</strong> Request for food delivery or pickup.</li>
+      <li><strong>SPMP:</strong> Software Project Management Plan.</li>
+    </ul>
+    
+    <h3>1.4 References</h3>
+    <ul>
+      <li>CP317 Food Requirements (provided)</li>
+      <li>SPMP - Group 8 (provided)</li>
+      <li>IEEE Software Requirements Specifications Standard</li>
+    </ul>
+    
+    <h3>1.5 Overview</h3>
+    <p>This document is organized into sections describing the overall system, detailed functional requirements, logical database requirements, software system attributes, and version history.</p>
+  </section>
+  
+  <section class="section" id="2-overall-description">
+    <h2>2. Overall Description</h2>
+    <h3>2.1 Product Perspective</h3>
+    <p>TastyGo is a standalone web application built using modern web technologies (HTML, CSS, JavaScript, and a backend language). The application will integrate with secure payment gateways and provide a responsive design for various devices.</p>
+    
+    <h3>2.2 Product Functions</h3>
+    <ul>
+      <li>User account registration and management.</li>
+      <li>Menu browsing, searching, and filtering.</li>
+      <li>Order placement, customization, and tracking.</li>
+      <li>Secure payment processing and receipt generation.</li>
+      <li>Restaurant menu management and order dispatching.</li>
+      <li>Administrative reporting and user management.</li>
+    </ul>
+    
+    <h3>2.3 User Characteristics</h3>
+    <p>The target users range from tech-savvy customers to restaurant managers and administrators. The system is designed with an intuitive UI to accommodate varying technical expertise.</p>
+    
+    <h3>2.4 Constraints</h3>
+    <ul>
+      <li>High concurrency during peak hours.</li>
+      <li>Compliance with payment security standards (e.g., PCI-DSS).</li>
+      <li>Browser compatibility with modern web standards.</li>
+    </ul>
+    
+    <h3>2.5 Assumptions and Dependencies</h3>
+    <ul>
+      <li>Users have reliable internet access.</li>
+      <li>The application will interface with third-party payment and POS systems.</li>
+      <li>Development tools and frameworks remain current throughout the project lifecycle.</li>
+    </ul>
+  </section>
+  
+  <section class="section" id="3-specific-requirements">
+    <h2>3. Specific Requirements</h2>
+    <h3>3.1 Functional Requirements</h3>
+    <ul>
+      <li><strong>FR1:</strong> The system shall allow customers to create, update, and delete their accounts.</li>
+      <li><strong>FR2:</strong> The system shall enable restaurant clients to add, edit, and remove menu items, including prices and images.</li>
+      <li><strong>FR3:</strong> The system shall process orders in real time, including order tracking and status updates.</li>
+      <li><strong>FR4:</strong> The system shall support multiple payment methods (credit card, wallet, etc.) and generate electronic receipts.</li>
+      <li><strong>FR5:</strong> The system shall allow administrators to manage user accounts and review system analytics.</li>
+    </ul>
+    
+    <h3>3.2 Logical Database Requirements</h3>
+    <ul>
+      <li><strong>DB1:</strong> The database shall securely store user profiles with unique identifiers.</li>
+      <li><strong>DB2:</strong> The database shall maintain detailed records of orders, transactions, and menu items.</li>
+      <li><strong>DB3:</strong> The system shall support scalability and high availability through optimized database design.</li>
+    </ul>
+    
+    <h3>3.3 Software System Attributes</h3>
+    <h4>3.3.1 Performance</h4>
+    <ul>
+      <li>The system shall support at least 1000 concurrent users with acceptable response times.</li>
+    </ul>
+    <h4>3.3.2 Security</h4>
+    <ul>
+      <li>All sensitive data must be encrypted both in transit and at rest.</li>
+      <li>The system shall adhere to industry-standard security protocols.</li>
+    </ul>
+    <h4>3.3.3 Portability</h4>
+    <ul>
+      <li>The application shall be accessible via all major web browsers and mobile devices.</li>
+    </ul>
+  </section>
+  
+  <section class="section" id="4-version-history">
+    <h2>4. Version History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Author</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>03/01/2025</td>
+          <td>1.0</td>
+          <td>Your Name</td>
+          <td>Initial requirements document for TastyGo</td>
+        </tr>
+        <!-- Additional revisions can be added here -->
+      </tbody>
+    </table>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 TastyGo. All rights reserved.</p>
+  </footer>
+</body>
+</html>

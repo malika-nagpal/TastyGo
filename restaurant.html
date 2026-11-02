@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - FoodDash</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/restaurant.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1>FoodDash</h1></a>
+            </div>
+            <div class="delivery-preference">
+                <button class="leave-at-door active">Leave at door</button>
+                <button class="hand-off">Hand to me</button>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">Log in</a>
+                <a href="signup.html" class="btn signup-btn">Sign up</a>
+            </div>
+            <div class="user-menu" style="display: none;">
+                <span class="user-name">User</span>
+                <div class="dropdown-menu">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="restaurant-container">
+        <div class="restaurant-header">
+            <div class="restaurant-banner">
+                <img id="restaurant-image" src="" alt="Restaurant">
+                <button class="favorite-btn">❤</button>
+            </div>
+            <div class="restaurant-info">
+                <h1 id="restaurant-name">Restaurant Name</h1>
+                <div class="restaurant-meta">
+                    <span class="rating">★ <span id="restaurant-rating">4.5</span></span>
+                    <span class="delivery-time"><span id="restaurant-delivery-time">30</span> min</span>
+                </div>
+                <div id="restaurant-categories" class="categories">
+                    <!-- Categories will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-content">
+            <div class="menu-container">
+                <div class="menu-nav">
+                    <!-- Menu navigation will be added by JavaScript -->
+                </div>
+                <div class="menu-items">
+                    <!-- Menu items will be added by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="cart-container">
+                <div class="cart">
+                    <h2>Your Order</h2>
+                    <div class="cart-items">
+                        <!-- Cart items will be added by JavaScript -->
+                        <div class="empty-cart">
+                            <p>Your cart is empty</p>
+                            <p>Add items to get started</p>
+                        </div>
+                    </div>
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span class="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee</span>
+                            <span class="delivery-fee">$2.99</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span class="tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span class="total-amount">$0.00</span>
+                        </div>
+                    </div>
+                    <button class="checkout-btn" disabled>Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>FoodDash</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Get to Know Us</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Investors</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Let Us Help You</h3>
+                    <a href="#">Account Details</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Doing Business</h3>
+                    <a href="#">Become a Partner</a>
+                    <a href="#">Advertise</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 FoodDash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/restaurant.js"></script>
+</body>
+</html> 

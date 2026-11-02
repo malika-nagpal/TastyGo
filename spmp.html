@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPMP - TastyGo</title>
+  <link rel="stylesheet" href="css/spmp.css">
+  <style>
+    /* Basic styling inspired by the CP317 SPMP standard */
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    header, footer {
+      text-align: center;
+      padding: 10px 0;
+    }
+    h1, h2, h3, h4 {
+      color: #000;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    p, ul, ol, table {
+      margin-bottom: 1em;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 2em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #d6d6d6;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    .subsection {
+      margin-left: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Software Project Management Plan (SPMP)</h1>
+    <h2>TastyGo Food Delivery Platform</h2>
+    <p>Version 1.0 &mdash; 03/01/2025</p>
+  </header>
+
+  <section class="section" id="overview">
+    <h2>1. Overview</h2>
+    <h3>1.1 Project Summary</h3>
+    <section class="subsection" id="project-purpose">
+      <h4>1.1.1 Project Purpose, Goals, and Objectives</h4>
+      <p>
+        TastyGo is designed to provide a streamlined food delivery solution connecting customers, restaurant clients, and administrators. The platform aims to deliver an intuitive user experience, reliable order processing, and comprehensive management tools.
+      </p>
+      <ul>
+        <li><strong>Goal 1:</strong> Develop a user-friendly interface for all actors.</li>
+        <li><strong>Goal 2:</strong> Ensure reliable order and payment processing.</li>
+        <li><strong>Goal 3:</strong> Provide robust reporting and analytics for administrators and restaurant clients.</li>
+      </ul>
+    </section>
+
+    <section class="subsection" id="assumptions-constraints">
+      <h4>1.1.2 Assumptions and Constraints</h4>
+      <ul>
+        <li>Team members will attend all scheduled meetings and adhere to deadlines.</li>
+        <li>The platform will run on all modern web browsers and mobile devices.</li>
+        <li>Integration with secure payment gateways and third-party systems is assumed.</li>
+        <li>Development tools and frameworks will remain current during the project lifecycle.</li>
+      </ul>
+    </section>
+
+    <section class="subsection" id="project-deliverables">
+      <h4>1.1.3 Project Deliverables</h4>
+      <ul>
+        <li>Fully functional TastyGo application</li>
+        <li>Requirements Document</li>
+        <li>Software Project Management Plan (SPMP)</li>
+        <li>Software Quality Assurance Plan (SQAP)</li>
+        <li>Object-Oriented Analysis and Design Documents</li>
+        <li>Test Plan and Documented Source Code</li>
+        <li>Maintenance Manual</li>
+      </ul>
+    </section>
+
+    <section class="subsection" id="schedule-budget">
+      <h4>1.1.4 Schedule and Budget Summaries</h4>
+      <p>No monetary budget is allocated for this course project. The timeline is as follows:</p>
+      <ul>
+        <li>Requirements: Due January 31, 2025</li>
+        <li>SPMP: Due February 7, 2025</li>
+        <li>Object-Oriented Analysis: Due March 7, 2025</li>
+        <li>Object-Oriented Design: Due March 21, 2025</li>
+        <li>Final Submission: Due April 4, 2025</li>
+      </ul>
+    </section>
+
+    <section class="subsection" id="success-criteria">
+      <h4>1.1.5 Project Success Criteria</h4>
+      <ul>
+        <li><strong>Scope:</strong> 100% coverage of required functionality.</li>
+        <li><strong>Schedule:</strong> Milestone deadlines are met.</li>
+        <li><strong>Quality:</strong> Defect density remains below 5% post-release.</li>
+        <li><strong>Stakeholder Satisfaction:</strong> Positive feedback from the client and users.</li>
+      </ul>
+    </section>
+
+    <h3>1.2 Stakeholder Management & Governance</h3>
+    <p>
+      <strong>Stakeholders:</strong> Instructor (Client), Project Managers, Team Members.<br>
+      <strong>Governance:</strong> Project Managers (e.g., Samir Bani and Rusanth Pirabakaran) oversee day-to-day operations, and the instructor approves scope changes.
+    </p>
+
+    <h3>1.3 Evolution of the Plan</h3>
+    <p>
+      The SPMP is a living document. It will be updated throughout the project based on client feedback, milestone reviews, and changes in scope or requirements.
+    </p>
+  </section>
+
+  <section class="section" id="references-definitions">
+    <h2>2. References</h2>
+    <ul>
+      <li>CP317 Food Requirements (provided)</li>
+      <li>SPMP - Group 8 (provided)</li>
+      <li>IEEE SPMP Standard (IEEE 1058)</li>
+    </ul>
+    
+    <h2>3. Definitions</h2>
+    <ul>
+      <li><strong>SPMP:</strong> Software Project Management Plan.</li>
+      <li><strong>SQA:</strong> Software Quality Assurance.</li>
+      <li><strong>GUI:</strong> Graphical User Interface.</li>
+      <li><strong>POS:</strong> Point of Sale system.</li>
+      <li><strong>CI:</strong> Continuous Integration.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="project-organization">
+    <h2>4. Project Organization</h2>
+    <p>
+      <strong>External Interfaces:</strong> Integration with payment gateways, restaurant POS systems, and third-party APIs.
+    </p>
+    <h3>4.1 Internal Structure & Roles</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Team Member</th>
+          <th>Responsibilities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Project Manager / Frontend Developer</td>
+          <td>Rusanth Pirabakaran</td>
+          <td>Oversees project schedule and implements frontend interfaces.</td>
+        </tr>
+        <tr>
+          <td>Project Manager / Backend Developer</td>
+          <td>Samir Bani</td>
+          <td>Coordinates tasks and implements backend functionality.</td>
+        </tr>
+        <tr>
+          <td>Lead Developer</td>
+          <td>Nitesh Sharma</td>
+          <td>Maintains coding standards and performs code reviews.</td>
+        </tr>
+        <tr>
+          <td>Database Designer</td>
+          <td>Ethan Farrar</td>
+          <td>Designs and maintains the database schema, ensuring data integrity and query optimization.</td>
+        </tr>
+        <tr>
+          <td>Database Designer</td>
+          <td>Manpreet S. Brar</td>
+          <td>Designs and maintains the database schema, ensuring data integrity and query optimization.</td>
+        </tr>
+        <tr>
+          <td>QA Tester</td>
+          <td>Desman Kwan</td>
+          <td>Leads testing efforts and ensures defect resolution.</td>
+        </tr>
+        <tr>
+          <td>Documentation Specialist</td>
+          <td>Kerem Erkoc</td>
+          <td>Prepares SPMP, design documents, and user guides; maintains documentation standards.</td>
+        </tr>
+        <tr>
+          <td>Documentation Specialist</td>
+          <td>Malika Nagpal</td>
+          <td>Prepares SPMP, design documents, and user guides; maintains documentation standards.</td>
+        </tr>
+        <tr>
+          <td>Customer Feedback Coordinator</td>
+          <td>Lucas Matheson</td>
+          <td>Liaises with the client and stakeholders, communicates project progress, and collects feedback.</td>
+        </tr>
+        <tr>
+          <td>Additional Team Member</td>
+          <td>Smith Okeke</td>
+          <td>Contributes across multiple roles as assigned.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section" id="managerial-process-plans">
+    <h2>5. Managerial Process Plans</h2>
+    <h3>5.1 Work Plan</h3>
+    <p>
+      The work plan is structured around major milestones including Requirements, SPMP, Object-Oriented Analysis, Object-Oriented Design, and Final Submission. Each team member is assigned tasks in accordance with their role.
+    </p>
+    <h3>5.2 Control Plan</h3>
+    <ul>
+      <li><strong>Requirements Control:</strong> Regular meetings and documented code reviews.</li>
+      <li><strong>Schedule Control:</strong> Milestone tracking with bi-weekly progress reviews.</li>
+      <li><strong>Quality Control:</strong> Continuous integration, automated testing, and peer reviews.</li>
+    </ul>
+    <h3>5.3 Risk Management Plan</h3>
+    <p>
+      Risks include schedule delays, integration issues, and potential technical hurdles. Mitigation strategies involve frequent testing, continuous stakeholder communication, and contingency planning.
+    </p>
+    <h3>5.4 Close-out Plan</h3>
+    <p>
+      The project will be closed out upon successful integration, complete documentation, and final client sign-off.
+    </p>
+  </section>
+
+  <section class="section" id="technical-process-plan">
+    <h2>6. Technical Process Plan</h2>
+    <h3>6.1 Process Model</h3>
+    <p>
+      The project will follow an iterative, Unified Process model with incremental deliverables.
+    </p>
+    <h3>6.2 Methods, Tools, and Techniques</h3>
+    <ul>
+      <li>Languages: HTML, CSS, JavaScript, and a server-side language</li>
+      <li>Tools: Visual Studio Code, GitHub, CI/CD pipelines</li>
+      <li>Techniques: Code reviews, unit testing, integration testing</li>
+    </ul>
+    <h3>6.3 Infrastructure Plan</h3>
+    <p>
+      Development will primarily be local with code maintained in a centralized GitHub repository.
+    </p>
+    <h3>6.4 Product Acceptance Plan</h3>
+    <p>
+      Final acceptance will be based on meeting all requirements, passing QA tests, and client approval.
+    </p>
+  </section>
+
+  <section class="section" id="supporting-process-plans">
+    <h2>7. Supporting Process Plans</h2>
+    <h3>7.1 Configuration Management</h3>
+    <p>
+      All artifacts will be managed using Git with regular backups and versioning.
+    </p>
+    <h3>7.2 Documentation Plan</h3>
+    <p>
+      Documentation will include design documents, test plans, user guides, and maintenance manuals.
+    </p>
+    <h3>7.3 Quality Assurance Plan</h3>
+    <p>
+      The QA plan includes unit tests, integration tests, and code reviews to ensure adherence to coding standards and requirements.
+    </p>
+    <h3>7.4 Problem Resolution Plan</h3>
+    <p>
+      Issues will be escalated to Project Managers, and if necessary, the instructor will be consulted for resolution.
+    </p>
+  </section>
+
+  <section class="section" id="team-participation">
+    <h2>8. Team Member Participation & Rating</h2>
+    <p>
+      Each team member will log their contributions. At project end, peer evaluations will be conducted and documented.
+    </p>
+  </section>
+
+  <section class="section" id="sqa-plan">
+    <h2>9. Software Quality Assurance (SQA) Plan</h2>
+    <h3>9.1 Quality Objectives</h3>
+    <ul>
+      <li>Maintain a defect density below 1 per 1000 lines of code.</li>
+      <li>Ensure 95% of test cases pass before final delivery.</li>
+      <li>Perform continuous integration and code reviews.</li>
+    </ul>
+    <h3>9.2 Roles and Responsibilities</h3>
+    <p>
+      The QA Tester leads testing; Project Managers oversee quality control; Developers ensure code standards; Documentation Specialists maintain updated reports.
+    </p>
+    <h3>9.3 Standards and Procedures</h3>
+    <p>
+      All processes will adhere to IEEE SPMP standards and internal guidelines.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TastyGo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
