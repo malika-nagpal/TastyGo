@@ -1,4 +1,4 @@
-# TastyGo — Food Delivery Application
+# TastyGo-Food Delivery Application
 
 TastyGo is a university group project developed for **CP317: Software Engineering** by **Group 8, consisting of 11 team members**. The project focuses on designing and developing a food delivery application that simplifies the food ordering experience while supporting restaurant operations and customer interaction.
 
@@ -56,7 +56,7 @@ The project was supported by a Software Project Management Plan (SPMP), outlinin
 
 ## Project Information
 
-- **Course:** CP317 — Software Engineering
+- **Course:** CP317- Software Engineering
 - **Project:** TastyGo
 - **Project Type:** University Group Project
 - **Team:** Group 8
